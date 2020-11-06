@@ -1,4 +1,4 @@
-package com.donalo.app.ui
+package com.donalo.app.ui.donationlist
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
