@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="typography_14_bold">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">10dp</item>
+    </style>
+
     <style name="typography_32_bold">
         <item name="android:textStyle">normal</item>
         <item name="android:textSize">32sp</item>
