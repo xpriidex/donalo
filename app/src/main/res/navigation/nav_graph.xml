@@ -9,25 +9,29 @@
         android:id="@+id/splashFragment"
         android:name="com.donalo.app.ui.splash.SplashFragment"
         android:label=""
-        tools:layout="@layout/splash_fragment" >
+        tools:layout="@layout/splash_fragment">
         <action
             android:id="@+id/action_splashFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:popUpTo="@+id/splashFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.donalo.app.ui.login.LoginFragment"
         android:label=""
-        tools:layout="@layout/login_fragment" >
+        tools:layout="@layout/login_fragment">
         <action
             android:id="@+id/action_loginFragment_to_donationListFragment"
-            app:destination="@id/donationListFragment" />
+            app:destination="@id/donationListFragment"
+            app:popUpTo="@+id/loginFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/donationListFragment"
         android:name="com.donalo.app.ui.donationlist.DonationListFragment"
         android:label="Listado de donaciones"
-        tools:layout="@layout/donation_list_fragment" >
+        tools:layout="@layout/donation_list_fragment">
         <action
             android:id="@+id/action_donationListFragment_to_donationDetailFragment"
             app:destination="@id/donationDetailFragment" />

@@ -25,9 +25,7 @@ class MainActivity : AppCompatActivity() {
         val appBarConfiguration = AppBarConfiguration
             .Builder(
                 R.id.loginFragment,
-                R.id.donationListFragment,
-                R.id.donationDetailFragment,
-                R.id.donationCreateFragment
+                R.id.donationListFragment
             )
             .build()
 
@@ -48,14 +46,16 @@ class MainActivity : AppCompatActivity() {
 
     private fun destinationManager() {
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
-         //   supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back_blue)
+            //   supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back_blue)
 
             when (destination.id) {
+                R.id.splashFragment, R.id.loginFragment -> {
+                    supportActionBar?.hide()
+                }
 
-
-                //else -> {
-                //    defaultScreen()
-                //}
+                else -> {
+                    supportActionBar?.show()
+                }
             }
         }
     }
