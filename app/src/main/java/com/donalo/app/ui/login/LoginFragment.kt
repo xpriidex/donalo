@@ -13,10 +13,6 @@ import com.donalo.app.databinding.LoginFragmentBinding
 
 class LoginFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = LoginFragment()
-    }
-
     private var viewBinding: LoginFragmentBinding? = null
 
     private lateinit var viewModel: LoginViewModel
