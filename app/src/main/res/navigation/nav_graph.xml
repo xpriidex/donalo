@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.donalo.app.SplashFragment"
+        android:label="splash_fragment"
+        tools:layout="@layout/splash_fragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.donalo.app.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_donationListFragment"
+            app:destination="@id/donationListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/donationListFragment"
+        android:name="com.donalo.app.DonationListFragment"
+        android:label="donation_list_fragment"
+        tools:layout="@layout/donation_list_fragment" >
+        <action
+            android:id="@+id/action_donationListFragment_to_donationDetailFragment"
+            app:destination="@id/donationDetailFragment" />
+        <action
+            android:id="@+id/action_donationListFragment_to_donationCreateFragment"
+            app:destination="@id/donationCreateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/donationDetailFragment"
+        android:name="com.donalo.app.DonationDetailFragment"
+        android:label="donation_detail_fragment"
+        tools:layout="@layout/donation_detail_fragment" />
+    <fragment
+        android:id="@+id/donationCreateFragment"
+        android:name="com.donalo.app.DonationCreateFragment"
+        android:label="donation_create_fragment"
+        tools:layout="@layout/donation_create_fragment" />
+</navigation>
