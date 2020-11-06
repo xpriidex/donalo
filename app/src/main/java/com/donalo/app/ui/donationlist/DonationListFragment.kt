@@ -6,10 +6,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import com.donalo.app.presentation.donationlist.DonationListViewModel
 import com.donalo.app.R
+import com.donalo.app.databinding.DonationListFragmentBinding
 
 class DonationListFragment : Fragment() {
+
+    private lateinit var  donationListFragmentBinding: DonationListFragmentBinding
+    private var donationAdapter: DonationAdapter? = null
 
     companion object {
         fun newInstance() = DonationListFragment()
@@ -21,7 +26,11 @@ class DonationListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.donation_list_fragment, container, false)
+        donationListFragmentBinding = DataBindingUtil.inflate( inflater,
+            R.layout.donation_list_fragment, container, false)
+
+        return donationListFragmentBinding.root
+
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
