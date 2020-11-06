@@ -1,16 +1,15 @@
 package com.donalo.app.ui.donationlist
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
-import com.donalo.app.presentation.donationlist.DonationListViewModel
 import com.donalo.app.R
 import com.donalo.app.databinding.DonationListFragmentBinding
+import com.donalo.app.presentation.donationlist.DonationListViewModel
 
 class DonationListFragment : Fragment() {
 
@@ -34,12 +33,6 @@ class DonationListFragment : Fragment() {
 
         return donationListFragmentBinding.root
 
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(DonationListViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
