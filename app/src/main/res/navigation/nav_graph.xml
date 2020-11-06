@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.donalo.app.SplashFragment"
+        android:name="com.donalo.app.ui.SplashFragment"
         android:label="splash_fragment"
         tools:layout="@layout/splash_fragment" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.donalo.app.LoginFragment"
+        android:name="com.donalo.app.ui.LoginFragment"
         android:label="login_fragment"
         tools:layout="@layout/login_fragment" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/donationListFragment"
-        android:name="com.donalo.app.DonationListFragment"
+        android:name="com.donalo.app.ui.DonationListFragment"
         android:label="donation_list_fragment"
         tools:layout="@layout/donation_list_fragment" >
         <action
@@ -37,12 +37,12 @@
     </fragment>
     <fragment
         android:id="@+id/donationDetailFragment"
-        android:name="com.donalo.app.DonationDetailFragment"
+        android:name="com.donalo.app.ui.DonationDetailFragment"
         android:label="donation_detail_fragment"
         tools:layout="@layout/donation_detail_fragment" />
     <fragment
         android:id="@+id/donationCreateFragment"
-        android:name="com.donalo.app.DonationCreateFragment"
+        android:name="com.donalo.app.ui.DonationCreateFragment"
         android:label="donation_create_fragment"
         tools:layout="@layout/donation_create_fragment" />
 </navigation>

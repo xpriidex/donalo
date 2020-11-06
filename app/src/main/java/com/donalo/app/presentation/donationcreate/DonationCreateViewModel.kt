@@ -1,4 +1,4 @@
-package com.donalo.app
+package com.donalo.app.presentation.donationcreate
 
 import androidx.lifecycle.ViewModel
 

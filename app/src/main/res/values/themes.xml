@@ -14,3 +14,10 @@
         <!-- Customize your theme here. -->
     </style>
 </resources>
+
+<resources>
+<color name="primaryColor">#43a047</color>
+<color name="primaryLightColor">#76d275</color>
+<color name="primaryDarkColor">#00701a</color>
+<color name="primaryTextColor">#fafafa</color>
+</resources>
