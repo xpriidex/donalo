@@ -1,34 +1,25 @@
 package com.donalo.app.ui.donationdetail
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import com.donalo.app.databinding.DonationDetailFragmentBinding
 import com.donalo.app.presentation.donationdetail.DonationDetailViewModel
-import com.donalo.app.R
 
 class DonationDetailFragment : Fragment() {
+    private var viewBinding: DonationDetailFragmentBinding? = null
 
-    companion object {
-        fun newInstance() =
-            DonationDetailFragment()
-    }
-
-    private lateinit var viewModel: DonationDetailViewModel
+    private val viewModel by viewModels<DonationDetailViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.donation_detail_fragment, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(DonationDetailViewModel::class.java)
-        // TODO: Use the ViewModel
+        viewBinding = DonationDetailFragmentBinding.inflate(inflater, container, false)
+        return viewBinding?.root
     }
 
 }
