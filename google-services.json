@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "485012741080",
+    "firebase_url": "https://donalo-f3d69.firebaseio.com",
+    "project_id": "donalo-f3d69",
+    "storage_bucket": "donalo-f3d69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485012741080:android:b6d702b4d87dc2d7c130ad",
+        "android_client_info": {
+          "package_name": "com.donalo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485012741080-1aribkfiadf815qqq1vr0vi1ggof1vjc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNjavqpVIuSPo8XAd_HjOT9GRVoATq8Vk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485012741080-1aribkfiadf815qqq1vr0vi1ggof1vjc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
