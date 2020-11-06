@@ -14,6 +14,7 @@
         android:background="@android:color/white"
         android:paddingStart="16dp"
         android:paddingTop="8dp"
+
         android:paddingEnd="16dp"
         android:paddingBottom="8dp"
         android:text="Ingresa la información de la donación"
@@ -23,9 +24,10 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_marginStart="16dp"
+        app:srcCompat="@drawable/icon_placeholder"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_launcher_foreground"
@@ -85,6 +87,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilDonateCategory" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
