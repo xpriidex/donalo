@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import com.donalo.app.presentation.donationlist.DonationListViewModel
 import com.donalo.app.R
 import com.donalo.app.databinding.DonationListFragmentBinding
@@ -19,6 +20,8 @@ class DonationListFragment : Fragment() {
     companion object {
         fun newInstance() = DonationListFragment()
     }
+    private var viewBinding: DonationListFragmentBinding? = null
+
 
     private lateinit var viewModel: DonationListViewModel
 
@@ -39,4 +42,12 @@ class DonationListFragment : Fragment() {
         // TODO: Use the ViewModel
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        viewBinding?.apply {
+            fabAddDonation.setOnClickListener {
+                findNavController().navigate(R.id.action_donationListFragment_to_donationCreateFragment)
+            }
+        }
+    }
 }
